@@ -1,4 +1,4 @@
-module go-bookstore
+module github.com/Robin-Rathore/go-bookstore
 
 go 1.24.0
 
