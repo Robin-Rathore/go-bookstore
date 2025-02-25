@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
 
 	"github.com/Robin-Rathore/go-bookstore/pkg/config"
 )
