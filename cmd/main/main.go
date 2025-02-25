@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 	"myapp/config" // Update with your actual module name
-	"gitub.com/Robin-Rathore/go-bookstore/pkg/config"
+	"github.com/Robin-Rathore/go-bookstore/pkg/config"
 )
 
 func main() {
