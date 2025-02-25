@@ -1,14 +1,17 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/Robin-Rathore/go-bookstore/pkg/config"
+	"log"
+	"net/http"
+	"github.com/gorilla/mux"
+	"github.com/Robin-Rathore/go-bookstore/pkg/routes"
 )
 
 func main() {
-	fmt.Println("Starting the application...")
+	
 
-	// Initialize the database connection
-	config.Connect()
+	r := mux.NewRouter()
+	routes.RegisterBookStoreRoutes(r)
+	http.Handle("/", r)
+	log.Fatal(http.ListenAndServe("localhost:9010", r))
 }

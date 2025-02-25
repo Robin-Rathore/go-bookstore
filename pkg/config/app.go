@@ -40,3 +40,7 @@ func Connect() {
 	DB = db
 	log.Println("✅ Successfully connected to Neon DB!")
 }
+
+func GetDB() *gorm.DB {
+    return DB
+}
