@@ -1,12 +1,15 @@
 package main
 
 import (
+	"fmt"
 	"log"
-	"myapp/config" // Update with your actual module name
+
 	"github.com/Robin-Rathore/go-bookstore/pkg/config"
 )
 
 func main() {
-	config.Connect() // Initialize the database connection
-	log.Println("🚀 Server is running...")
+	fmt.Println("Starting the application...")
+
+	// Initialize the database connection
+	config.Connect()
 }
